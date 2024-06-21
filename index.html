@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Schelberg - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Andrew Schelberg</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Andrew Schelberg</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section_pic-container">
+        <img src="./assets/profile-pic.png" alt="Andrew Schelberg Profile Picture" class="pro-pic">
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Andrew Schelberg</h1>
+        <p class="section_text_p2">Junior Frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Andrew Schelberg_Resume.pdf')">Resume</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/andrew-schelberg-6b9277127/'">
+          <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/aschelberg'">
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get to know more</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers details-banner">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="experience icon" class="icon">
+              <h3>Experience</h3>
+              <p>3+ years <br> Business Analyst</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="education icon" class="icon">
+              <h3>Education</h3>
+              <p>Bachelor of Arts in Actuarial Science<br> SUNY Binghamton University, 2018</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>New York based Analyst with over 4 years of experience in diverse roles across Finance and Product Management, I have developed a robust analytical skill set that drives strategic decision-making. For the past 3 years, I have been dedicated to learning front-end development and various frameworks, creating practice projects independently. My goal is to leverage this technical expertise to transition into a career as a Front-End Developer, combining my analytical background with strong development skills to deliver innovative solutions.</p>
+            <br>
+            <p>In my free time away from my computer, I enjoy staying physically active by running, playing various sports (such as baseball, basketball, softball, and golf), and weight lifting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Vue.JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+             
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>MS Excel</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers projects">
+
+          <div class="details-container project color-container">
+            <div class="left-div">
+              <div class="article-container">
+                <img src="./assets/project-recipe.png" alt="Recipe Project " class="project-img">
+              </div>
+              <div class="btn-container">
+                <a class="btn btn-color-2 project-btn" href='https://recipes.andrewschelberg.dev'" target="_blank">
+                  View Website
+                </a>
+                <a class="btn btn-color-1 project-btn" href='https://github.com/aschelberg/Recipes'" target="_blank">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+            <div class="right-div">
+              <h2 class="experience-sub-title project-title">Recipe App</h2>
+              <p class="project-description">A simple Vue app that uses the free MealDB API to search for recipes based on key ingredient, or by name. This is my first project integrating Firebase (specifically Firestore Database for data storage and Authentication by a simple form or by provider auth).</p>
+            </div>
+          </div>
+          <div class="details-container project color-container">
+            <div class="left-div">
+              <div class="article-container">
+                <img src="./assets/project-pokedex.png" alt="Pokedex Project " class="project-img">
+              </div>
+              <div class="btn-container">
+                <a class="btn btn-color-1 project-btn" href='https://pokedex.andrewschelberg.dev/'"  target="_blank">
+                  View Website
+                </a>
+                <a class="btn btn-color-1 project-btn" href='https://github.com/aschelberg/Pokedex'"  target="_blank">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+            <div class="right-div">
+              <h2 class="experience-sub-title project-title">Pokedex</h2>
+              <p class="project-description">Simple Vue app that introduced me to using Google Firebase Authentication. This was a fun app to work on utilizing the free, RESTful Pokemon API and bringing a bit of nostalgia to a build. </p>
+            </div>
+          </div>
+          <div class="details-container project color-container">
+            <div class="left-div">
+              <div class="article-container">
+                <img src="./assets/project-weather-app.png" alt="Weather App Project " class="project-img">
+              </div>
+              <div class="btn-container">
+                <a class="btn btn-color-2 project-btn" href='https://weatherapp.andrewschelberg.dev'"  target="_blank">
+                  View Website
+                </a>
+                <a class="btn btn-color-1 project-btn" href='https://github.com/aschelberg/weather_app_yt'"  target="_blank">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+            <div class="right-div">
+              <h2 class="experience-sub-title project-title">Weather App</h2>
+              <p class="project-description">The Weather App project was my  attempt at recreating a useful application utilizing the Open Weather Map API. I was able to mirror similar features as Apple Weather App provides with the ability to search, save and remove locations to local storage and learning how to use Axios for HTTP requests.</p>
+            </div>
+          </div>
+          <div class="details-container project color-container">
+            <div class="left-div">
+              <div class="article-container">
+                <img src="./assets/project-todo-app.png" alt="Todo App Project " class="project-img">
+              </div>
+              <div class="btn-container">
+                <a class="btn btn-color-2 project-btn" href='https://todoapp.andrewschelberg.dev'" target="_blank">
+                  View Website
+                </a>
+                <a class="btn btn-color-1 project-btn" href='https://github.com/aschelberg/Todo_app'" target="_blank">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+            <div class="right-div">
+              <h2 class="experience-sub-title project-title">Todo App</h2>
+              <p class="project-description">My first project I created from start to finish in Vue.JS. Originally, while following along educational videos about Front End development, the Todo App is the first thing done. I leveraged my understanding of building a simple application into learning the Vue.JS framework.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title"> Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:aschelberg10@gmail.com">aschelberg10@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/andrew-schelberg-6b9277127/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Site Designed & Developed by Andrew Schelberg &#169; 2024. All rights reserved</p>
+    </footer>
+  </body>
+  
+  <script src="script.js"></script>
+</html>
